@@ -1,11 +1,12 @@
-function AlterarStatus () 
+function alterarStatus(id) 
 {
     let gameEscolhido = document.getElementById(`game-${id}`);
     let imagem = gameEscolhido.querySelector ('.dashboard__item__img');
-    let botao = gameEscolhido.querySelector('dashboard__item__button');
-    let nome = gameEscolhido.querySelector ('dashboard__item__name');
+    let botao = gameEscolhido.querySelector('.dashboard__item__button');
+    let nomeJogo = gameEscolhido.querySelector ('.dashboard__item__name');
 
-    alert (nome.textContent);
-
+    console.log ("botão clicado");
+    console.log (id);
+    alert (nomeJogo.textContent);
 
 }
